@@ -11,3 +11,15 @@ body {
 	background-size: 100%;
 	background-image: url(./img/bgbig2.png);
 }
+.container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	border: 1px solid aqua;
+	height: 250px;
+	width: 250px;
+	background-color: rgba(0, 0, 0, 0.65);
+	margin-top: 90px;
+}
+
