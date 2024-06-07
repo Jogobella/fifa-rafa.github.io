@@ -4,6 +4,10 @@
 	margin: 0;
 }
 body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
 	background-image: url(./img/bgbig2.png);
 }
-
