@@ -36,7 +36,7 @@ h2 img {
 	position: absolute;
 	top: 5.5rem;
 	right: -3.6rem;
-	
+	animation: rotation1 7s linear infinite;
 }
 .logo {
 	color: aqua;
@@ -67,7 +67,6 @@ a {
 	animation: appearance 3s;
 	animation-delay: 2s;
 	animation-fill-mode: both;
-	
 }
 @keyframes appearance {
 	0% {
@@ -95,5 +94,3 @@ a {
 		transform: perspective(300px) rotateY(360deg);
 	}
 }
-
-
