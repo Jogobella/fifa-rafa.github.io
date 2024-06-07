@@ -8,7 +8,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: auto;
 	background-image: url(./img/bgbig2.png);
 }
 .container {
@@ -17,9 +17,83 @@ body {
 	flex-direction: column;
 	position: relative;
 	border: 1px solid aqua;
-	height: 250px;
-	width: 250px;
+	height: 245px;
+	width: 220px;
 	background-color: rgba(0, 0, 0, 0.65);
 	margin-top: 90px;
 }
+h1 img {
+	height: 65px;
+	color: aqua;
+	position: absolute;
+	top: 5.5rem;
+	left: -3.6rem;
+	animation: rotation1 7s linear infinite;
+}
+h2 img {
+	height: 65px;
+	color: aqua;
+	position: absolute;
+	top: 5.5rem;
+	right: -3.6rem;
+	animation: rotation2 7s linear infinite;
+}
+.logo {
+	color: aqua;
+	font-size: 0.5em;
+	padding-top: 1.8em;
+	padding-bottom: 1em;
+	margin-bottom: 50px;
+	animation: appearance 3s;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+}
+.photokb {
+	height: 80px;
+	margin-bottom: 50px;
+	animation: appearance 5s;
+	animation-delay: 3s;
+	animation-fill-mode: both;
+}
+a {
+	font-size: 5px;
+	color: aqua;
+	text-decoration: none;
+	border: 0.5px solid aqua;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	animation: appearance 3s;
+	animation-delay: 2s;
+	animation-fill-mode: both;
+	
+}
+@keyframes appearance {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes rotation1 {
+	0% {
+		transform: perspective(300px) rotateY(360deg);
+	}
+
+	100% {
+		transform: perspective(300px) rotateY(0deg);
+	}
+}
+@keyframes rotation2 {
+	0% {
+		transform: perspective(300px) rotateY(0deg);
+	}
+
+	100% {
+		transform: perspective(300px) rotateY(360deg);
+	}
+}
+
 
