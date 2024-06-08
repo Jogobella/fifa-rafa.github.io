@@ -10,6 +10,9 @@ body {
 	background-repeat: no-repeat;
 	background-size: auto;
 	background-image: url(./img/bgbig2.png);
+	font-family: "Poppins", sans-serif;
+	
+	
 }
 .container {
 	display: flex;
@@ -17,10 +20,10 @@ body {
 	flex-direction: column;
 	position: relative;
 	border: 1px solid aqua;
-	height: 245px;
-	width: 220px;
+	height: 15.3rem;
+	width: 13.7rem;
 	background-color: rgba(0, 0, 0, 0.65);
-	margin-top: 160px;
+	margin-top: 10rem;
 }
 h1 img {
 	height: 65px;
@@ -40,7 +43,7 @@ h2 img {
 }
 .logo {
 	color: aqua;
-	font-size: 0.7em;
+	font-size: 0.8em;
 	padding-top: 1.8em;
 	padding-bottom: 1em;
 	margin-bottom: 50px;
@@ -49,18 +52,18 @@ h2 img {
 	animation-fill-mode: both;
 }
 .photokb {
-	height: 80px;
-	margin-top: -13px;
+	height: 6rem;
+	margin-top: -1.6rem;
 	animation: appearance 5s;
 	animation-delay: 3s;
 	animation-fill-mode: both;
 }
 a {
-	font-size: 8px;
+	font-size: 0.5rem;
 	color: aqua;
 	text-decoration: none;
 	border: 0.5px solid aqua;
-    margin-top: 45px;
+    margin-top: 1.5rem;
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top: 5px;
@@ -69,6 +72,26 @@ a {
 	animation-delay: 2s;
 	animation-fill-mode: both;
 }
+@media (min-width: 576px) {
+	.container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		position: relative;
+		border: 1px solid aqua;
+		height: 245px;
+		width: 220px;
+		background-color: rgba(0, 0, 0, 0.65);
+		margin-top: 16rem ;
+	}
+
+}
+
+
+
+
+
+
 @keyframes appearance {
 	0% {
 		opacity: 0;
