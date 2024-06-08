@@ -26,7 +26,7 @@ body {
 	margin-top: 10rem;
 }
 h1 img {
-	height: 65px;
+	height: 4rem;
 	color: aqua;
 	position: absolute;
 	top: 5.5rem;
@@ -34,7 +34,7 @@ h1 img {
 	animation: rotation1 7s linear infinite;
 }
 h2 img {
-	height: 65px;
+	height: 4rem;
 	color: aqua;
 	position: absolute;
 	top: 5.5rem;
@@ -46,7 +46,7 @@ h2 img {
 	font-size: 0.8em;
 	padding-top: 1.8em;
 	padding-bottom: 1em;
-	margin-bottom: 50px;
+	margin-bottom: 3.1rem;
 	animation: appearance 3s;
 	animation-delay: 1s;
 	animation-fill-mode: both;
@@ -64,10 +64,10 @@ a {
 	text-decoration: none;
 	border: 0.5px solid aqua;
     margin-top: 1.5rem;
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: 0.9rem;
+	padding-right: 0.9rem;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
 	animation: appearance 3s;
 	animation-delay: 2s;
 	animation-fill-mode: both;
@@ -79,10 +79,56 @@ a {
 		flex-direction: column;
 		position: relative;
 		border: 1px solid aqua;
-		height: 245px;
-		width: 220px;
+		height: 26rem;
+		width: 20rem;
 		background-color: rgba(0, 0, 0, 0.65);
-		margin-top: 16rem ;
+		margin-top: 15rem;
+	}
+	h1 img {
+		height: 6rem;
+		color: aqua;
+		position: absolute;
+		top: 8.4rem;
+		left: -5rem;
+		animation: rotation1 7s linear infinite;
+	}
+	h2 img {
+		height: 6rem;
+		color: aqua;
+		position: absolute;
+		top: 8.4rem;
+		right: -5rem;
+		animation: rotation2 7s linear infinite;
+	}
+	.logo {
+		color: aqua;
+		font-size: 1rem;
+		
+		margin-bottom: 3.1rem;
+		animation: appearance 3s;
+		animation-delay: 1s;
+		animation-fill-mode: both;
+	}
+	.photokb {
+		height: 10rem;
+		margin-top: -1rem;
+		animation: appearance 5s;
+		animation-delay: 3s;
+		animation-fill-mode: both;
+	}
+	a {
+		font-size: 0.5rem;
+		color: aqua;
+		text-decoration: none;
+		border: 0.5px solid aqua;
+		margin-top: 5.5rem;
+		padding-left: 0.9rem;
+		padding-right: 0.9rem;
+		padding-top: 0.3rem;
+		padding-bottom: 0.3rem;
+		animation: appearance 3s;
+		animation-delay: 2s;
+		animation-fill-mode: both;
 	}
 
 }
