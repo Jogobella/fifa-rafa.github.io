@@ -10,9 +10,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: auto;
 	background-image: url(./img/bgbig2.png);
-	font-family: "Poppins", sans-serif;
-	
-	
+	font-family: 'Poppins', sans-serif;
 }
 .container {
 	display: flex;
@@ -63,7 +61,7 @@ a {
 	color: aqua;
 	text-decoration: none;
 	border: 0.5px solid aqua;
-    margin-top: 1.5rem;
+	margin-top: 1.5rem;
 	padding-left: 0.9rem;
 	padding-right: 0.9rem;
 	padding-top: 0.3rem;
@@ -103,7 +101,7 @@ a {
 	.logo {
 		color: aqua;
 		font-size: 1rem;
-		
+
 		margin-bottom: 3.1rem;
 		animation: appearance 3s;
 		animation-delay: 1s;
@@ -130,13 +128,81 @@ a {
 		animation-delay: 2s;
 		animation-fill-mode: both;
 	}
-
 }
+@media (min-width: 768px) {
+	.container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		position: relative;
+		border: 1px solid aqua;
+		height: 33rem;
+		width: 29rem;
+		background-color: rgba(0, 0, 0, 0.65);
+		margin-top: 14rem;
+	}
+	h1 img {
+		height: 8rem;
+		color: aqua;
+		position: absolute;
+		top: 11rem;
+		left: -7.5rem;
+		animation: rotation1 7s linear infinite;
+	}
+	h2 img {
+		height: 8rem;
+		color: aqua;
+		position: absolute;
+		top: 11rem;
+		right: -7.5rem;
+		animation: rotation2 7s linear infinite;
+	}
+	.logo {
+		color: aqua;
+		font-size: 1.7rem;
 
-
-
-
-
+		margin-bottom: 3.1rem;
+		animation: appearance 3s;
+		animation-delay: 1s;
+		animation-fill-mode: both;
+	}
+	.photokb {
+		height: 13rem;
+		margin-top: -1rem;
+		animation: appearance 5s;
+		animation-delay: 3s;
+		animation-fill-mode: both;
+	}
+	a {
+		font-size: 0.9rem;
+		color: aqua;
+		text-decoration: none;
+		border: 0.5px solid aqua;
+		margin-top: 5.5rem;
+		padding-left: 0.9rem;
+		padding-right: 0.9rem;
+		padding-top: 0.3rem;
+		padding-bottom: 0.3rem;
+		animation: appearance 3s;
+		animation-delay: 2s;
+		animation-fill-mode: both;
+	}
+}
+@media (min-width: 992px) {
+	body {
+		background-size: auto;
+	}
+}
+@media (min-width: 1200px) {
+	body {
+		background-size: auto;
+	}
+}
+@media (min-width: 1400px) {
+	body {
+		background-size: 100%;
+	}
+}
 
 @keyframes appearance {
 	0% {
