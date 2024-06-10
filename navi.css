@@ -1,0 +1,97 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-image: url(./img/bgbig2.png);
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+.navbar ul {
+	list-style-type: none;
+	text-align: center;
+	margin-top: 6.8rem;
+	}
+	
+.navbar ul li a {
+	display: inline-block;
+}
+
+.navbar a {
+	color: aqua;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding: 1.25rem;
+	font-size: 1.5rem;
+}
+
+.navbar ul li:first-child a {
+	animation: pojawianie 2s;
+	animation-fill-mode: both;
+	animation-delay: 1.5s;
+	transition: 0.3s;
+}
+
+.navbar ul li:nth-child(2) a {
+	animation: pojawianie 2s;
+	animation-fill-mode: both;
+	animation-delay: 1.2s;
+	transition: 0.3s;
+}
+
+.navbar ul li:nth-child(3) a {
+	animation: pojawianie 2s;
+	animation-fill-mode: both;
+	animation-delay: 0.9s;
+	transition: 0.3s;
+}
+
+.navbar ul li:nth-child(4) a {
+	animation: pojawianie 2s;
+	animation-fill-mode: both;
+	animation-delay: 0.6s;
+	transition: 0.3s;
+}
+
+.navbar ul li:nth-child(5) a {
+	animation: pojawianie 2s;
+	animation-fill-mode: both;
+	animation-delay: 0.3s;
+	transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+	background-color: rgb(37, 36, 36);
+	border-radius: 8px;
+	border: 1px solid aqua;
+}
+
+
+
+@media (min-width: 768px) {
+	.navbar ul {
+		list-style-type: none;
+		text-align: center;
+		padding: 0px;
+		margin-top: 15.5rem;
+	}
+	
+}
+@media (min-width: 1400px) {
+	body {
+		background-size: 100%;
+	}
+}
+
+@keyframes pojawianie {
+	0% {
+		opacity: 0;
+		transform: translateY(-500px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
