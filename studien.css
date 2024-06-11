@@ -1,0 +1,80 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: rgb(55, 54, 54);
+	display: flex;
+	justify-content: center;
+	background-image: url(./img/bgbig2.png);
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+.dokument {
+	margin-top: 4rem;
+	width: 70vw;
+	height: 21rem;
+	border: 1px solid aqua;
+}
+.navbar {
+    position: absolute;
+	display: flex;
+	justify-content: center;
+	margin-left: 0.6rem;
+	margin-top: 32.5rem;
+    height: 2.8rem;
+    width: 88vw;
+	overflow: hidden;
+}
+	
+
+.navbar ul {
+    position: absolute;
+	display: flex;
+	list-style-type: none;
+	text-align: center;
+	padding: 0px;
+	
+}
+.navbar li {
+	display: flex;
+}
+.navbar li a {
+    padding: 5px;
+    font-size: 9px;
+    
+}
+
+.navbar ul li a {
+	display: inline-block;
+}
+.navbar a {
+	color: aqua;
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+	font-size: 15px;
+}
+.navbar ul li:nth-child(2) {
+	background-color: rgb(90, 3, 3);
+}
+
+
+
+@media (max-width: 500px) {
+	
+
+
+	
+	
+	
+}
+@keyframes pojawianie1 {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
