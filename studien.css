@@ -12,63 +12,87 @@ body {
 	background-size: auto;
 }
 .dokument {
-	margin-top: 4rem;
-	width: 70vw;
-	height: 21rem;
+	position: absolute;
+	margin-top: 50px;
+	height: 400px;
+	width: 250px;
 	border: 1px solid aqua;
 }
+
 .navbar {
-    position: absolute;
-	display: flex;
-	justify-content: center;
-	margin-left: 0.6rem;
-	margin-top: 32.5rem;
-    height: 2.8rem;
-    width: 88vw;
-	overflow: hidden;
+	margin-left: 0;
+	margin-top: 30rem;
+	height: 2.8rem;
+	width: 88vw;
 }
-	
 
 .navbar ul {
-    position: absolute;
 	display: flex;
-	list-style-type: none;
-	text-align: center;
-	padding: 0px;
-	
-}
-.navbar li {
-	display: flex;
-}
-.navbar li a {
-    padding: 5px;
-    font-size: 9px;
-    
+	justify-content: center;
+	align-items: center;
+	margin-left: 0.6rem;
 }
 
-.navbar ul li a {
-	display: inline-block;
+.navbar li a {
+	padding: 0.3rem;
+	font-size: 0.56rem;
 }
+
 .navbar a {
 	color: aqua;
 	text-decoration: none;
 	display: block;
 	padding: 20px;
-	font-size: 15px;
+	font-size: 2px;
 }
 .navbar ul li:nth-child(2) {
 	background-color: rgb(90, 3, 3);
 }
 
-
-
-@media (max-width: 500px) {
-	
-
-
-	
-	
-	
+@media (min-width: 768px) {
+	.dokument {
+		position: absolute;
+		top: 8.5rem;
+		width: 50vw;
+		height: 35rem;
+		
+	}
+	.navbar ul {
+		bottom: 22rem;
+		margin-left: 75%;
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		flex-direction: column;
+		list-style-type: none;
+		text-align: center;
+	}
+	.navbar ul li a {
+		font-size: 0.6rem;
+		padding: 1rem;
+	}
+}
+@media (min-width: 1200px) {
+	.navbar ul {
+		margin-top: -7.5rem;
+	}
+	.navbar ul li a {
+		font-size: 0.8rem;
+		padding: 1rem;
+	}
+}
+@media (min-width: 1400px) {
+	body {
+		background-image: url('./img/bgbig2.png');
+		background-size: 100%;
+	}
+	.navbar ul {
+		margin-top: -8.5rem;
+	}
+	.navbar ul li a {
+		font-size: 1rem;
+		padding: 1rem;
+	}
 }
 @keyframes pojawianie1 {
 	0% {

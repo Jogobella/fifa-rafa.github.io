@@ -81,6 +81,8 @@ body {
 }
 @media (min-width: 1200px) {
 	body {
+		background-image: url(./img/bgbig2.png);
+	    background-repeat: no-repeat;
 		background-size: auto;
 	}
 	.navbar a {
@@ -89,7 +91,9 @@ body {
 }
 @media (min-width: 1400px) {
 	body {
-		background-size: auto;
+		background-image: url(./img/bgbig2.png);
+	    background-repeat: no-repeat;
+		background-size: 100%;
 	}
 	.navbar a {
 		font-size: 3rem;
