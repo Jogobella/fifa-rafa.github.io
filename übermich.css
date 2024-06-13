@@ -4,6 +4,7 @@
 	margin: 0;
 }
 body {
+	background-color: black;
 	display: flex;
 	justify-content: center;
 	background-image: url(./img/bgbig2.png);
@@ -13,8 +14,8 @@ body {
 .section {
 	position: absolute;
 	top: 4rem;
-	width: 75vw;
-	height: 21.8rem;
+	width: 80vw;
+	height: 22rem;
 	border: 1px solid aqua;
 	background-color: rgba(0, 0, 0, 0.75);
 
@@ -48,8 +49,10 @@ h2 {
 h3 {
 	color: aqua;
 	font-size: 1rem;
-	padding-top: 1rem;
+	padding-top: 1.6rem;
+	padding-bottom: 1rem;
 	padding-left: 1.2rem;
+	padding-right: 1.2rem;
 	animation: appear 5s;
 	animation-delay: 3s;
 	animation-fill-mode: both;
@@ -63,6 +66,7 @@ h3 {
 }
 
 .navbar ul {
+	list-style-type: none;
 	align-items: center;
 	justify-content: center;
 	margin-left: 0.6rem;
@@ -70,16 +74,14 @@ h3 {
 }
 .navbar li a {
 	padding: 0.3rem;
-	font-size: 0.56rem;
-}
-
-.navbar a {
+	font-size: 0.60rem;
 	color: aqua;
 	text-decoration: none;
 	display: block;
-	padding: 20px;
-	font-size: 15px;
+	
 }
+
+
 .navbar ul li:nth-child(1) {
 	background-color: rgb(90, 3, 3);
 }
@@ -186,8 +188,8 @@ img {
 @media (min-width: 1400px) {
 	body {
 		background-image: url('./img/bgbig2.png');
-		background-size: 100%;
-		background-repeat: no-repeat;
+		background-size:100% ;
+		
 	}
 	.navbar ul {
 		bottom: 22rem;

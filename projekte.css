@@ -36,14 +36,13 @@ body {
 
 .navbar li a {
 	padding: 0.3rem;
-	font-size: 0.60rem;
+	font-size: 0.65rem;
 	color: aqua;
 	text-decoration: none;
 	display: block;
 }
 
-
-.navbar ul li:nth-child(2) {
+.navbar ul li:nth-child(3) {
 	background-color: rgb(90, 3, 3);
 }
 
@@ -53,7 +52,6 @@ body {
 		top: 8.5rem;
 		width: 50vw;
 		height: 35rem;
-		
 	}
 	.navbar ul {
 		bottom: 22rem;
@@ -77,7 +75,6 @@ body {
 	.navbar ul li a {
 		font-size: 0.8rem;
 		padding: 1rem;
-		
 	}
 }
 @media (min-width: 1400px) {
