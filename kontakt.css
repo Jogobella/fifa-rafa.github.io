@@ -1,0 +1,112 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	display: flex;
+	justify-content: center;
+	background-image: url(./img/bgbig2.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.contact {
+	position: absolute;
+	margin-top: 3rem;
+	background-color: rgb(25, 24, 24);
+	padding: 30px;
+	height: 400px;
+	width: 85vw;
+	border: 1px solid aqua;
+	animation: pojawianie1 3s;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+}
+.contact-box {
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+    animation: pojawianie1 3s;
+	animation-delay: 3s;
+	animation-fill-mode: both;
+}
+
+.contact label {
+	color: aqua;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.contact input,
+.contact textarea {
+	background-color: rgb(55, 54, 54);
+	padding: 10px;
+	font-size: 12px;
+	font-family: inherit;
+	border: 1px solid aqua;
+}
+.contact textarea {
+	resize: vertical;
+	min-height: 100px;
+}
+button {
+	cursor: pointer;
+	width: 100%;
+	margin-top: 20px;
+	font-size: 12px;
+	padding: 8px;
+	border: 1px solid aqua;
+	color: aqua;
+	background-color: rgb(55, 54, 54);
+    animation: pojawianie1 3s;
+	animation-delay: 4s;
+	animation-fill-mode: both;
+}
+button:hover {
+	background-color: rgb(37, 36, 36);
+}
+.contact input:hover {
+	background-color: white;
+}
+.contact textarea:hover {
+	background-color: white;
+}
+
+.navbar {
+	margin-top: 30rem;
+}
+
+.navbar ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar li a {
+	padding: 0.3rem;
+	font-size: 0.6rem;
+	color: aqua;
+	text-decoration: none;
+	display: block;
+}
+.navbar ul li:nth-child(5) {
+	background-color: rgb(90, 3, 3);
+}
+
+
+@media (max-width: 1400px) {
+	body {
+		background-image: url('./img/bgbig2.png');
+		background-size: auto;
+	}
+}
+
+
+ @keyframes pojawianie1 {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+} 
