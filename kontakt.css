@@ -19,7 +19,7 @@ body {
 	height: 400px;
 	width: 85vw;
 	border: 1px solid aqua;
-	/* animation: pojawianie1 3s; */
+	animation: pojawianie1 3s;
 	animation-delay: 1s;
 	animation-fill-mode: both;
 }
@@ -27,7 +27,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	padding: 5px;
-    /* animation: pojawianie1 3s; */
+    animation: pojawianie1 3s;
 	animation-delay: 3s;
 	animation-fill-mode: both;
 }
@@ -58,7 +58,7 @@ button {
 	border: 1px solid aqua;
 	color: aqua;
 	background-color: rgb(55, 54, 54);
-    /* animation: pojawianie1 3s; */
+    animation: pojawianie1 3s;
 	animation-delay: 4s;
 	animation-fill-mode: both;
 }
