@@ -4,11 +4,12 @@
 	margin: 0;
 }
 body {
+	background-color: black;
 	display: flex;
 	justify-content: center;
 	background-image: url(./img/bgbig2.png);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: auto;
 }
 .contact {
 	position: absolute;
@@ -18,7 +19,7 @@ body {
 	height: 400px;
 	width: 85vw;
 	border: 1px solid aqua;
-	animation: pojawianie1 3s;
+	/* animation: pojawianie1 3s; */
 	animation-delay: 1s;
 	animation-fill-mode: both;
 }
@@ -26,7 +27,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	padding: 5px;
-    animation: pojawianie1 3s;
+    /* animation: pojawianie1 3s; */
 	animation-delay: 3s;
 	animation-fill-mode: both;
 }
@@ -57,7 +58,7 @@ button {
 	border: 1px solid aqua;
 	color: aqua;
 	background-color: rgb(55, 54, 54);
-    animation: pojawianie1 3s;
+    /* animation: pojawianie1 3s; */
 	animation-delay: 4s;
 	animation-fill-mode: both;
 }
@@ -94,12 +95,82 @@ button:hover {
 }
 
 
-@media (max-width: 1400px) {
+@media (min-width: 768px) {
+	.contact {
+		width: 55vw;
+		height: 35rem;
+		top: 8.5rem;
+	}
+	.contact-box {
+		padding: 10px;
+	}
+	button {
+		margin-top: 5rem;
+		font-size: 1.2rem;
+	}
+	.contact label {
+		font-size: 1.2rem;
+	}
+	.navbar {
+		margin-top: 30rem;
+		width: 88vw;
+	}
+	.navbar ul {
+		bottom: 22rem;
+		margin-left: 75%;
+		display: flex;
+		justify-content: center;
+		position: absolute;
+		flex-direction: column;
+		list-style-type: none;
+		text-align: center;
+	}
+	.navbar ul li a {
+		font-size: 0.6rem;
+		padding: 1rem;
+	}
+	
+}
+@media (min-width: 1200px) {
+	.contact {
+		width: 40vw;
+		height: 35rem;
+		top: 8.5rem;
+	}
+	.contact-box {
+		padding: 10px;
+	}
+	button {
+		margin-top: 5rem;
+		font-size: 1.2rem;
+	}
+	.contact label {
+		font-size: 1.2rem;
+	}
+	.navbar ul {
+		margin-top: -7.5rem;
+	}
+	.navbar ul li a {
+		font-size: 0.8rem;
+		padding: 1rem;
+	}
+
+}
+@media (min-width: 1400px) {
 	body {
 		background-image: url('./img/bgbig2.png');
-		background-size: auto;
+		background-size: 100%;
 	}
-}
+
+.navbar ul {
+	margin-top: -8.5rem;
+} 
+.navbar ul li a {
+	font-size: 1rem;
+	padding: 1rem;
+} 
+} 
+
 
 
  @keyframes pojawianie1 {
