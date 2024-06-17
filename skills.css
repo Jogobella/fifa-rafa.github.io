@@ -12,6 +12,7 @@ body {
 	background-size: auto;
 }
 .dokument {
+	background-color: rgb(25, 24, 24);
 	position: absolute;
 	margin-top: 50px;
 	height: 400px;

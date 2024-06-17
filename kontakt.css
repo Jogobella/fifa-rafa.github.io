@@ -49,11 +49,11 @@ body {
 	resize: vertical;
 	min-height: 100px;
 }
-button {
+input[type="submit"]{
 	cursor: pointer;
 	width: 100%;
 	margin-top: 20px;
-	font-size: 12px;
+	font-size: 1rem;
 	padding: 8px;
 	border: 1px solid aqua;
 	color: aqua;
@@ -62,12 +62,10 @@ button {
 	animation-delay: 4s;
 	animation-fill-mode: both;
 }
-button:hover {
+input[type="submit"]:hover {
 	background-color: rgb(37, 36, 36);
 }
-.contact input:hover {
-	background-color: white;
-}
+
 .contact textarea:hover {
 	background-color: white;
 }
