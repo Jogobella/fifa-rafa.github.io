@@ -12,15 +12,16 @@ body {
 	background-size: auto;
 }
 .dokument {
+	background-color: rgb(41, 40, 40, 0.65);
 	position: absolute;
-	margin-top: 50px;
-	height: 400px;
-	width: 250px;
-	border: 1px solid aqua;
+	margin-top: 1.2rem;
+	height: 28rem;
+	width: 16rem;
+	animation: rotation 2s;
 }
 
 .navbar {
-	margin-top: 30rem;
+	margin-top: 32rem;
 	
 }
 
@@ -53,11 +54,11 @@ body {
 		height: 35rem;
 	}
 	.navbar {
-		margin-top: 30rem;
+		
 		width: 88vw;
 	}
 	.navbar ul {
-		bottom: 22rem;
+		bottom: 24rem;
 		margin-left: 75%;
 		display: flex;
 		justify-content: center;
@@ -93,11 +94,19 @@ body {
 		padding: 1rem;
 	}
 }
-@keyframes pojawianie1 {
+@keyframes appear {
 	0% {
 		opacity: 0;
 	}
 	100% {
 		opacity: 1;
+	}
+}
+@keyframes rotation {
+	0% {
+		transform: rotateY(90deg);
+	}
+	100% {
+		transform: rotateY(180deg);
 	}
 }

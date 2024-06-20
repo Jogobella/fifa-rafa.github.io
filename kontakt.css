@@ -4,6 +4,7 @@
 	margin: 0;
 }
 body {
+	
 	background-color: black;
 	display: flex;
 	justify-content: center;
@@ -11,24 +12,54 @@ body {
 	background-repeat: no-repeat;
 	background-size: auto;
 }
-.contact {
+.dokument {
 	position: absolute;
+	display: flex;
+	justify-content: center;
+	
+	background-color: rgb(41, 40, 40, 0.65);
 	margin-top: 3rem;
-	background-color: rgb(25, 24, 24);
-	padding: 30px;
-	height: 400px;
-	width: 85vw;
-	border: 1px solid aqua;
-	animation: pojawianie1 3s;
+	height: 25rem;
+	width: 15.6rem;
+	animation: appear 2s;
 	animation-delay: 1s;
 	animation-fill-mode: both;
+	
 }
-.contact-box {
+/* .email img {
+	position: absolute;
+	height: 50px;
+	margin-top: 5rem;
+	left: 50%;
+    transform: translateX(-50%);
+}
+p {
+	margin-top: 8rem;
+	padding: 1rem;
+	font-size: 1rem;
+	color: aqua;
+}   */
+
+ .contact {
+	position: absolute;
+	left: 50%;
+    transform: translateX(-50%);
+	margin-top: 3rem;
+	background-color: rgb(41, 40, 40, 0.65);
+	padding: 1.8rem;
+	height: 25rem;
+	width: 16.5rem;
+	
+	animation: appear 3s;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+} 
+ .contact-box {
 	display: flex;
 	flex-direction: column;
 	padding: 5px;
-    animation: pojawianie1 3s;
-	animation-delay: 3s;
+    animation: appear 3s;
+	animation-delay: 2s;
 	animation-fill-mode: both;
 }
 
@@ -49,7 +80,7 @@ body {
 	resize: vertical;
 	min-height: 100px;
 }
-input[type="submit"]{
+button{
 	cursor: pointer;
 	width: 100%;
 	margin-top: 20px;
@@ -58,11 +89,11 @@ input[type="submit"]{
 	border: 1px solid aqua;
 	color: aqua;
 	background-color: rgb(55, 54, 54);
-    animation: pojawianie1 3s;
-	animation-delay: 4s;
+    animation: appear 3s;
+	animation-delay: 2.5s;
 	animation-fill-mode: both;
 }
-input[type="submit"]:hover {
+button:hover {
 	background-color: rgb(37, 36, 36);
 }
 
@@ -71,7 +102,7 @@ input[type="submit"]:hover {
 }
 
 .navbar {
-	margin-top: 30rem;
+	margin-top: 32rem;
 }
 
 .navbar ul {
@@ -94,8 +125,10 @@ input[type="submit"]:hover {
 
 
 @media (min-width: 768px) {
+	
 	.contact {
-		width: 55vw;
+		position: absolute;
+		width: 50%;
 		height: 35rem;
 		top: 8.5rem;
 	}
@@ -110,11 +143,11 @@ input[type="submit"]:hover {
 		font-size: 1.2rem;
 	}
 	.navbar {
-		margin-top: 30rem;
+		
 		width: 88vw;
 	}
 	.navbar ul {
-		bottom: 22rem;
+		bottom: 24rem;
 		margin-left: 75%;
 		display: flex;
 		justify-content: center;
@@ -137,6 +170,7 @@ input[type="submit"]:hover {
 	}
 	.contact-box {
 		padding: 10px;
+		
 	}
 	button {
 		margin-top: 5rem;
@@ -168,14 +202,22 @@ input[type="submit"]:hover {
 	padding: 1rem;
 } 
 } 
+@keyframes rotation {
+	0% {
+		transform: rotateY(90deg);
+	}
+	100% {
+		transform: rotateY(180deg);
+	}
+	}
 
 
 
- @keyframes pojawianie1 {
+ @keyframes appear {
 	0% {
 		opacity: 0;
 	}
 	100% {
 		opacity: 1;
 	}
-} 
+}  

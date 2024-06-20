@@ -12,26 +12,95 @@ body {
 	background-size: auto;
 }
 .dokument {
-	background-color: rgb(25, 24, 24);
+	background-color: rgb(41, 40, 40, 0.65);
 	position: absolute;
-	margin-top: 50px;
-	height: 400px;
-	width: 250px;
-	border: 1px solid aqua;
+	margin-top: 1.2rem;
+	height: 28rem;
+	width: 16rem;
+	animation: rotation 2s;
+}
+
+img {
+	margin-left: 5%;
+	height: 40px;
+	padding: 0.6rem;
+}
+span {
+	position: absolute;
+	color: aqua;
+	margin-top: 0.9rem;
+	font-size: 0.6rem;
+}
+.figma {
+	animation: appear 3s;
+	animation-fill-mode: both;
+	animation-delay: 2.4s;
+	transition: 0.3s;
+}
+.canva {
+	animation: appear 3s;
+	animation-fill-mode: both;
+	animation-delay: 2.6s;
+	transition: 0.3s;
+}
+.mysql {
+	animation: appear 3s;
+	animation-fill-mode: both;
+	animation-delay: 3s;
+	transition: 0.3s;
+}
+.java {
+	animation: appear 3s;
+	animation-fill-mode: both;
+	animation-delay: 2s;
+	transition: 0.3s;
+}
+.cplusplus {
+	animation: appear 2.5s;
+	animation-fill-mode: both;
+	animation-delay: 2.2s;
+	transition: 0.3s;
+}
+.miro {
+	animation: appear 3s;
+	animation-fill-mode: both;
+	animation-delay: 2.8s;
+	transition: 0.3s;
+}
+.sqlsm {
+	animation: appear 3s;
+	animation-fill-mode: both;
+	animation-delay: 3.2s;
+	transition: 0.3s;
+}
+.modelio {
+	animation: appear 3s;
+	animation-fill-mode: both;
+	animation-delay: 3.4s;
+	transition: 0.3s;
+}
+.microsoftteams {
+	animation: appear 3s;
+	animation-fill-mode: both;
+	animation-delay: 3.6s;
+	transition: 0.3s;
+}
+.ciscopackettracer {
+	animation: appear 3s;
+	animation-fill-mode: both;
+	animation-delay: 3.8s;
+	transition: 0.3s;
 }
 
 .navbar {
-	margin-top: 30rem;
-	
+	margin-top: 32rem;
 }
 
 .navbar ul {
-	
 	list-style-type: none;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
 }
 
 .navbar li a {
@@ -50,15 +119,26 @@ body {
 	.dokument {
 		position: absolute;
 		top: 8.5rem;
-		width: 50vw;
+		width: 50%;
 		height: 35rem;
 	}
+	img {
+		margin-left: 5%;
+		height: 50px;
+		padding: 0.6rem;
+	}
+	span {
+		position: absolute;
+		color: aqua;
+		margin-top: 0.9rem;
+		font-size: 0.8rem;
+	}
 	.navbar {
-		margin-top: 30rem;
+		
 		width: 88vw;
 	}
 	.navbar ul {
-		bottom: 22rem;
+		bottom: 24rem;
 		margin-left: 75%;
 		display: flex;
 		justify-content: center;
@@ -73,6 +153,17 @@ body {
 	}
 }
 @media (min-width: 1200px) {
+	img {
+		margin-left: 5%; 
+		height: 50px;
+		padding: 0.6rem;
+	}
+	span {
+		position: absolute;
+		color: aqua;
+		margin-top: 0.9rem;
+		font-size: 0.8rem;
+	}
 	.navbar ul {
 		margin-top: -7.5rem;
 	}
@@ -86,6 +177,21 @@ body {
 		background-image: url('./img/bgbig2.png');
 		background-size: 100%;
 	}
+	
+	
+	
+	img {
+		margin-left: 5%; 
+		height: 50px;
+		padding: 0.6rem;
+	}
+	span {
+		position: absolute;
+		color: aqua;
+		margin-top: 0.9rem;
+		font-size: 0.8rem;
+	}
+	
 	.navbar ul {
 		margin-top: -8.5rem;
 	}
@@ -94,11 +200,19 @@ body {
 		padding: 1rem;
 	}
 }
-@keyframes pojawianie1 {
+@keyframes appear {
 	0% {
 		opacity: 0;
 	}
 	100% {
 		opacity: 1;
+	}
+}
+@keyframes rotation {
+	0% {
+		transform: rotateY(90deg);
+	}
+	100% {
+		transform: rotateY(180deg);
 	}
 }

@@ -13,24 +13,85 @@ body {
 }
 .dokument {
 	position: absolute;
-	margin-top: 50px;
-	height: 400px;
-	width: 250px;
-	border: 1px solid aqua;
+	display: flex;
+	justify-content: center;
+
+	background-color: rgb(41, 40, 40, 0.65);
+	margin-top: 3rem;
+	height: 25rem;
+	width: 15.6rem;
+	animation: rotation 2s;
+}
+
+img {
+	background-color: rgb(90, 3, 3);
+	margin-top: 2rem;
+	height: 60px;
+	animation: appear 3s;
+	animation-fill-mode: both;
+	animation-delay: 2s;
+	transition: 0.3s;
+}
+.navbar_one {
+	margin-top: 8rem;
+	position: absolute;
+}
+.navbar_one ul li {
+	color: aqua;
+	list-style-type: none;
+	padding: 0.8rem;
+	cursor: pointer;
+}
+.navbar_one ul li:first-child {
+	animation: appear 3s;
+	animation-fill-mode: both;
+	animation-delay: 3s;
+	transition: 0.3s;
+}
+.navbar_one ul li:first-child {
+	animation: appear 3s;
+	animation-fill-mode: both;
+	animation-delay: 3.3s;
+	transition: 0.3s;
+}
+.navbar_one ul li:nth-child(2) {
+	animation: appear 3s;
+	animation-fill-mode: both;
+	animation-delay: 3.6s;
+	transition: 0.3s;
+}
+.navbar_one ul li:nth-child(3) {
+	animation: appear 3s;
+	animation-fill-mode: both;
+	animation-delay: 3.9s;
+	transition: 0.3s;
+}
+.navbar_one ul li:nth-child(4) {
+	animation: appear 3s;
+	animation-fill-mode: both;
+	animation-delay: 4.1s;
+	transition: 0.3s;
+}
+.navbar_one ul li:nth-child(5) {
+	animation: appear 3s;
+	animation-fill-mode: both;
+	animation-delay: 4.4s;
+	transition: 0.3s;
+}
+.navbar_one ul li:hover {
+	background-color: rgb(90, 3, 3);
+	border-radius: 2px;
 }
 
 .navbar {
-	margin-top: 30rem;
-	
+	margin-top: 32rem;
 }
 
 .navbar ul {
-	
 	list-style-type: none;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
 }
 
 .navbar li a {
@@ -52,12 +113,30 @@ body {
 		width: 50vw;
 		height: 35rem;
 	}
+	img {
+		background-color: rgb(90, 3, 3);
+		margin-top: 3rem;
+		height: 80px;
+		animation: appear 3s;
+		animation-fill-mode: both;
+		animation-delay: 2s;
+		transition: 0.3s;
+	}
+	.navbar_one {
+		margin-top: 12rem;
+		position: absolute;
+	}
+	.navbar_one ul li {
+		color: aqua;
+		list-style-type: none;
+		padding: 0.8rem;
+		cursor: pointer;
+	}
 	.navbar {
-		margin-top: 30rem;
 		width: 88vw;
 	}
 	.navbar ul {
-		bottom: 22rem;
+		bottom: 24rem;
 		margin-left: 75%;
 		display: flex;
 		justify-content: center;
@@ -72,6 +151,26 @@ body {
 	}
 }
 @media (min-width: 1200px) {
+	img {
+		background-color: rgb(90, 3, 3);
+		margin-top: 4rem;
+		height: 100px;
+		animation: appear 3s;
+		animation-fill-mode: both;
+		animation-delay: 2s;
+		transition: 0.3s;
+	}
+	.navbar_one {
+		margin-top: 14rem;
+		position: absolute;
+	}
+	.navbar_one ul li {
+		font-size: 1.5rem;
+		color: aqua;
+		list-style-type: none;
+		padding: 0.8rem;
+		cursor: pointer;
+	}
 	.navbar ul {
 		margin-top: -7.5rem;
 	}
@@ -93,7 +192,16 @@ body {
 		padding: 1rem;
 	}
 }
-@keyframes pojawianie1 {
+
+@keyframes rotation {
+	0% {
+		transform: rotateY(90deg);
+	}
+	100% {
+		transform: rotateY(180deg);
+	}
+}
+@keyframes appear {
 	0% {
 		opacity: 0;
 	}
