@@ -4,6 +4,7 @@
 	margin: 0;
 }
 body {
+	background-color: rgb(0, 0, 0);
 	background-image: url(./img/bgbig2.png);
 	background-repeat: no-repeat;
 	background-size: auto;
