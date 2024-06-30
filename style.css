@@ -8,6 +8,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 100vh;
 	background-repeat: no-repeat;
 	background-size: auto;
 	background-image: url(./img/bgbig2.png);
@@ -16,191 +17,131 @@ body {
 .container {
 	display: flex;
 	align-items: center;
+	justify-content: space-evenly;
 	flex-direction: column;
-	position: relative;
-	border: 1px solid aqua;
 	height: 15.3rem;
 	width: 13.7rem;
-	background-color: rgba(0, 0, 0, 0.65);
-	margin-top: 10rem;
+	background-color: rgba(30, 39, 40, 0.65);
+	animation: rotation 2s;
+	animation-fill-mode: backwards;
 }
-h1 img {
-	height: 4rem;
-	color: aqua;
+
+.logo_kb img {
+	height: 80px;
+}
+
+.flagi {
+	/* background-color: rgba(30, 39, 40, 0.65); */
 	position: absolute;
-	top: 5.5rem;
-	left: -3.6rem;
-	animation: rotation1 7s linear infinite;
+	display: flex;
+	flex-direction: row;
+	
+	left: 50%;
+	transform: translate(-50%);
+	
+	top: 0;
+	
 }
-h2 img {
-	height: 4rem;
+.flagi img {
+	
+	padding: 8px 8px;
+	height: 35px;
+	width: 35px;
+}
+
+.logo h2 {
 	color: aqua;
-	position: absolute;
-	top: 5.5rem;
-	right: -3.6rem;
-	animation: rotation2 7s linear infinite;
-}
-.logo {
-	color: aqua;
-	font-size: 0.8em;
-	padding-top: 1.8em;
-	padding-bottom: 1em;
-	margin-bottom: 3.1rem;
-	animation: appearance 3s;
-	animation-delay: 1s;
-	animation-fill-mode: both;
-}
-.photokb {
-	height: 6rem;
-	margin-top: -1.6rem;
+
+	padding: 5px 7px;
+	border-radius: 5px;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+
 	animation: appearance 5s;
-	animation-delay: 3s;
+	animation-delay: 1.5s;
 	animation-fill-mode: both;
 }
-a {
-	font-size: 0.5rem;
-	color: aqua;
-	text-decoration: none;
-	border: 0.5px solid aqua;
-	margin-top: 1.5rem;
-	padding-left: 0.9rem;
-	padding-right: 0.9rem;
-	padding-top: 0.3rem;
-	padding-bottom: 0.3rem;
-	animation: appearance 3s;
+.photo img {
+	height: 100px;
+
+	animation: appearance 5s;
 	animation-delay: 2s;
 	animation-fill-mode: both;
 }
-@media (min-width: 576px) {
-	.container {
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		position: relative;
-		border: 1px solid aqua;
-		height: 26rem;
-		width: 20rem;
-		background-color: rgba(0, 0, 0, 0.65);
-		margin-top: 15rem;
-	}
-	h1 img {
-		height: 6rem;
-		color: aqua;
-		position: absolute;
-		top: 8.4rem;
-		left: -5rem;
-		animation: rotation1 7s linear infinite;
-	}
-	h2 img {
-		height: 6rem;
-		color: aqua;
-		position: absolute;
-		top: 8.4rem;
-		right: -5rem;
-		animation: rotation2 7s linear infinite;
-	}
-	.logo {
-		color: aqua;
-		font-size: 1rem;
-
-		margin-bottom: 3.1rem;
-		animation: appearance 3s;
-		animation-delay: 1s;
-		animation-fill-mode: both;
-	}
-	.photokb {
-		height: 10rem;
-		margin-top: -1rem;
-		animation: appearance 5s;
-		animation-delay: 3s;
-		animation-fill-mode: both;
-	}
-	a {
-		font-size: 0.5rem;
-		color: aqua;
-		text-decoration: none;
-		border: 0.5px solid aqua;
-		margin-top: 5.5rem;
-		padding-left: 0.9rem;
-		padding-right: 0.9rem;
-		padding-top: 0.3rem;
-		padding-bottom: 0.3rem;
-		animation: appearance 3s;
-		animation-delay: 2s;
-		animation-fill-mode: both;
-	}
+button {
+	font-size: 13px;
+	padding: 5px 9px;
+	border-radius: 5px;
+	margin-top: 3.5rem;
+	border-style: none;
+	background-color: rgba(30, 39, 40);
+	color: aqua;
+	border: 1px solid aqua;
+	animation: appearance 5s;
+	animation-delay: 2.5s;
+	animation-fill-mode: both;
 }
 @media (min-width: 768px) {
 	.container {
 		display: flex;
 		align-items: center;
+		justify-content: space-evenly;
 		flex-direction: column;
-		position: relative;
-		border: 1px solid aqua;
-		height: 33rem;
-		width: 29rem;
-		background-color: rgba(0, 0, 0, 0.65);
-		margin-top: 14rem;
+		height: 30.6rem;
+		width: 27.4rem;
+		background-color: rgba(30, 39, 40, 0.65);
 	}
-	h1 img {
-		height: 8rem;
-		color: aqua;
-		position: absolute;
-		top: 11rem;
-		left: -7.5rem;
-		animation: rotation1 7s linear infinite;
+	.flagi img {
+		
+		height: 45px;
+		width: 45px;
 	}
-	h2 img {
-		height: 8rem;
-		color: aqua;
-		position: absolute;
-		top: 11rem;
-		right: -7.5rem;
-		animation: rotation2 7s linear infinite;
-	}
-	.logo {
-		color: aqua;
-		font-size: 1.7rem;
 
-		margin-bottom: 3.1rem;
-		animation: appearance 3s;
-		animation-delay: 1s;
-		animation-fill-mode: both;
-	}
-	.photokb {
-		height: 13rem;
-		margin-top: -1rem;
-		animation: appearance 5s;
-		animation-delay: 3s;
-		animation-fill-mode: both;
-	}
-	a {
-		font-size: 0.9rem;
+	.logo h2 {
+		font-size: 50px;
 		color: aqua;
-		text-decoration: none;
-		border: 0.5px solid aqua;
-		margin-top: 5.5rem;
-		padding-left: 0.9rem;
-		padding-right: 0.9rem;
-		padding-top: 0.3rem;
-		padding-bottom: 0.3rem;
+
 		animation: appearance 3s;
 		animation-delay: 2s;
 		animation-fill-mode: both;
 	}
-}
-@media (min-width: 992px) {
-	body {
-		background-size: auto;
+	.photo img {
+		height: 200px;
+
+		animation: appearance 5s;
+		animation-delay: 2.5s;
+		animation-fill-mode: both;
+	}
+	button {
+		font-size: 30px;
+
+		border-radius: 5px;
+		margin-top: 10rem;
+		border-style: none;
+		background-color: rgba(30, 39, 40);
+		border: 1px solid aqua;
+		color: aqua;
+		cursor: pointer;
+
+		animation: appearance 3s;
+		animation-delay: 3s;
+		animation-fill-mode: both;
+	}
+	button :hover {
+		background-color: brown;
 	}
 }
 @media (min-width: 1200px) {
 	body {
+		background-repeat: no-repeat;
 		background-size: auto;
+		background-image: url(./img/bgbig2.png);
 	}
 }
 @media (min-width: 1400px) {
 	body {
+		background-image: url(./img/bgbig2.png);
+		background-repeat: no-repeat;
 		background-size: 100%;
 	}
 }
@@ -213,21 +154,11 @@ a {
 		opacity: 1;
 	}
 }
-@keyframes rotation1 {
+@keyframes rotation {
 	0% {
-		transform: perspective(300px) rotateY(360deg);
+		transform: rotateY(90deg);
 	}
-
 	100% {
-		transform: perspective(300px) rotateY(0deg);
-	}
-}
-@keyframes rotation2 {
-	0% {
-		transform: perspective(300px) rotateY(0deg);
-	}
-
-	100% {
-		transform: perspective(300px) rotateY(360deg);
+		transform: rotateY(180deg);
 	}
 }

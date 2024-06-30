@@ -7,85 +7,83 @@ body {
 	background-color: black;
 	display: flex;
 	justify-content: center;
+
 	background-image: url(./img/bgbig2.png);
 	background-repeat: no-repeat;
 	background-size: auto;
 }
-
-.contact {
-	position: absolute;
+.container_en {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	left: 50%;
-	transform: translateX(-50%);
-	
-	margin-top: 3rem;
+	flex-direction: column;
+	height: 100vh;
+}
 
-	padding: 1.8rem;
+.contact {
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
 	height: 25rem;
-	width: 80%;
+	width: 16rem;
+	margin-bottom: 3.5rem;
 }
 
 .contact-box {
 	display: flex;
 	flex-direction: column;
-	padding: 5px;
 	
+	padding: 5px;
 }
 .contact input {
-	animation: slideDown 4s;
+	animation: slideDown 3s;
 	animation-fill-mode: both;
-	animation-delay: 0.3s;
+	animation-delay: 0.2s;
 	transition: 0.3s;
 }
 
 .contact label {
-	
 	color: aqua;
-	font-size: 12px;
+
 	margin-bottom: 10px;
-	animation: slideDown 4s;
+	animation: slideDown 3s;
 	animation-fill-mode: both;
-	animation-delay: 0.3s;
+	animation-delay: 0.2s;
 	transition: 0.3s;
 }
 .contact input,
 .contact textarea {
 	background-color: rgb(55, 54, 54);
 	padding: 10px;
-	font-size: 12px;
+	width: 65vw;
+
 	font-family: inherit;
 	border: 1px solid aqua;
 }
 .contact textarea {
-	
 	resize: vertical;
-	width: 10rem;
 	min-height: 6rem;
-	animation: slideDown 4s;
+	animation: slideDown 3s;
 	animation-fill-mode: both;
-	animation-delay: 0.3s;
+	animation-delay: 0.2s;
 	transition: 0.3s;
 }
 button {
 	cursor: pointer;
-	margin-top: 20px;
+	margin-top: 1rem;
 	border: none;
 	font-size: 0.8rem;
-	padding: 5px 10px;
+	padding: 7px 10px;
 	border-radius: 5px;
 	color: aqua;
 	background-color: rgb(90, 3, 3);
-	animation: appear 4s;
+	animation: appear 3s;
 	animation-fill-mode: both;
-	animation-delay: 4s;
+	animation-delay: 3s;
 	transition: 0.3s;
 }
-	
-	
-
 
 .contact textarea:hover {
 	background-color: white;
@@ -94,15 +92,12 @@ button {
 	background-color: white;
 }
 
-.navbar {
-	margin-top: 32rem;
-}
-
 .navbar ul {
 	list-style-type: none;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
 }
 
 .navbar li a {
@@ -117,60 +112,95 @@ button {
 }
 
 @media (min-width: 768px) {
-	.contact {
+	.container_en {
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		position: absolute;
-		left: 50%;
-	    transform: translateX(-50%);
-		width: 50%;
-		height: 35rem;
-		top: 8.5rem;
+		flex-direction: row;
+	}
+	.contact {
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 400px;
+		height: 550px;
+		
+		
+		
 	}
 	.contact-box {
-		width: 15rem;
-		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 5px;
+		
 	}
+	.contact input,
 	.contact textarea {
-		width: 14rem;
+		background-color: rgb(55, 54, 54);
+		padding: 10px;
+		width: 15rem;
+		font-family: inherit;
+		border: 1px solid aqua;
+	}
+	.contact label {
+		color: aqua;
+		font-size: 1.2rem;
+		margin-bottom: 10px;
+		animation: slideDown 3s;
+		animation-fill-mode: both;
+		animation-delay: 0.2s;
+		transition: 0.3s;
 	}
 	button {
-		width: 5rem;
-		font-size: 0.8rem;
-		padding: 1rem;
-		border-radius: 10px;
-		background-color: rgb(90, 3, 3);
+		cursor: pointer;
+		margin-top: 1rem;
 		border: none;
+		font-size: 0.8rem;
+		padding: 7px 10px;
+		border-radius: 5px;
+		color: aqua;
+		background-color: rgb(90, 3, 3);
+		animation: appear 3s;
+		animation-fill-mode: both;
+		animation-delay: 3s;
+		transition: 0.3s;
 	}
+
 	.contact label {
 		font-size: 1.2rem;
 	}
-	.navbar {
-		width: 88vw;
-	}
 	.navbar ul {
-		bottom: 24rem;
-		margin-left: 75%;
-		display: flex;
-		justify-content: center;
-		position: absolute;
 		flex-direction: column;
+	}
+	.navbar_one ul li {
+		color: aqua;
 		list-style-type: none;
-		text-align: center;
+		padding: 0.8rem;
+		cursor: pointer;
+	}
+	.navbar {
+		margin-left: 8rem;
+	}
+
+	.navbar ul {
+		flex-direction: column;
+	}
+	.navbar ul li {
+		margin-bottom: 10px;
 	}
 	.navbar ul li a {
-		font-size: 0.6rem;
-		padding: 1rem;
+		color: aqua;
+		text-decoration: none;
+		padding: 10px 20px;
+		text-align: center;
 	}
 }
+
 @media (min-width: 1200px) {
-	.contact {
-		width: 40vw;
-		height: 35rem;
-		top: 8.5rem;
-	}
+	
 	.contact-box {
 		padding: 10px;
 	}
@@ -182,9 +212,7 @@ button {
 	.contact label {
 		font-size: 1.2rem;
 	}
-	.navbar ul {
-		margin-top: -7.5rem;
-	}
+
 	.navbar ul li a {
 		font-size: 0.8rem;
 		padding: 1rem;
@@ -195,23 +223,465 @@ button {
 		background-image: url('./img/bgbig2.png');
 		background-size: 100%;
 	}
-	.contact {
-		width: 40vw;
-		height: 35rem;
-		top: 8.5rem;
-	}
+	
 	.contact-box {
 		padding: 10px;
 	}
 
-	.navbar ul {
-		margin-top: -8.5rem;
-	}
+	
 	.navbar ul li a {
 		font-size: 1rem;
 		padding: 1rem;
 	}
 }
+/* DEDEDEDEDEDEDEDEDEDEDE */
+.container_de {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.contact {
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 25rem;
+	width: 16rem;
+	margin-bottom: 3.5rem;
+}
+
+.contact-box {
+	display: flex;
+	flex-direction: column;
+	
+	padding: 5px;
+}
+.contact input {
+	animation: slideDown 3s;
+	animation-fill-mode: both;
+	animation-delay: 0.2s;
+	transition: 0.3s;
+}
+
+.contact label {
+	color: aqua;
+
+	margin-bottom: 10px;
+	animation: slideDown 3s;
+	animation-fill-mode: both;
+	animation-delay: 0.2s;
+	transition: 0.3s;
+}
+.contact input,
+.contact textarea {
+	background-color: rgb(55, 54, 54);
+	padding: 10px;
+	width: 65vw;
+
+	font-family: inherit;
+	border: 1px solid aqua;
+}
+.contact textarea {
+	resize: vertical;
+	min-height: 6rem;
+	animation: slideDown 3s;
+	animation-fill-mode: both;
+	animation-delay: 0.2s;
+	transition: 0.3s;
+}
+button {
+	cursor: pointer;
+	margin-top: 1rem;
+	border: none;
+	font-size: 0.8rem;
+	padding: 7px 10px;
+	border-radius: 5px;
+	color: aqua;
+	background-color: rgb(90, 3, 3);
+	animation: appear 3s;
+	animation-fill-mode: both;
+	animation-delay: 3s;
+	transition: 0.3s;
+}
+
+.contact textarea:hover {
+	background-color: white;
+}
+.contact input:hover {
+	background-color: white;
+}
+
+.navbar ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.navbar li a {
+	padding: 0.3rem;
+	font-size: 0.6rem;
+	color: aqua;
+	text-decoration: none;
+	display: block;
+}
+.navbar ul li:nth-child(5) {
+	background-color: rgb(90, 3, 3);
+}
+
+@media (min-width: 768px) {
+	.container_de {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+	}
+	.contact {
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 400px;
+		height: 550px;
+		
+		
+		
+	}
+	.contact-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 5px;
+		
+	}
+	.contact input,
+	.contact textarea {
+		background-color: rgb(55, 54, 54);
+		padding: 10px;
+		width: 15rem;
+		font-family: inherit;
+		border: 1px solid aqua;
+	}
+	.contact label {
+		color: aqua;
+		font-size: 1.2rem;
+		margin-bottom: 10px;
+		animation: slideDown 3s;
+		animation-fill-mode: both;
+		animation-delay: 0.2s;
+		transition: 0.3s;
+	}
+	button {
+		cursor: pointer;
+		margin-top: 1rem;
+		border: none;
+		font-size: 0.8rem;
+		padding: 7px 10px;
+		border-radius: 5px;
+		color: aqua;
+		background-color: rgb(90, 3, 3);
+		animation: appear 3s;
+		animation-fill-mode: both;
+		animation-delay: 3s;
+		transition: 0.3s;
+	}
+
+	.contact label {
+		font-size: 1.2rem;
+	}
+	.navbar ul {
+		flex-direction: column;
+	}
+	.navbar_one ul li {
+		color: aqua;
+		list-style-type: none;
+		padding: 0.8rem;
+		cursor: pointer;
+	}
+	.navbar {
+		margin-left: 8rem;
+	}
+
+	.navbar ul {
+		flex-direction: column;
+	}
+	.navbar ul li {
+		margin-bottom: 10px;
+	}
+	.navbar ul li a {
+		color: aqua;
+		text-decoration: none;
+		padding: 10px 20px;
+		text-align: center;
+	}
+}
+
+@media (min-width: 1200px) {
+	
+	.contact-box {
+		padding: 10px;
+	}
+	button {
+		padding: 15px;
+		width: 7rem;
+		font-size: 1rem;
+	}
+	.contact label {
+		font-size: 1.2rem;
+	}
+
+	.navbar ul li a {
+		font-size: 0.8rem;
+		padding: 1rem;
+	}
+}
+@media (min-width: 1400px) {
+	body {
+		background-image: url('./img/bgbig2.png');
+		background-size: 100%;
+	}
+	
+	.contact-box {
+		padding: 10px;
+	}
+
+	
+	.navbar ul li a {
+		font-size: 1rem;
+		padding: 1rem;
+	}
+}
+/* PLPLPLPLPLPLPLPLPLPLPLPL */
+.container_pl {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.contact {
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 25rem;
+	width: 16rem;
+	margin-bottom: 3.5rem;
+}
+
+.contact-box {
+	display: flex;
+	flex-direction: column;
+	
+	padding: 5px;
+}
+.contact input {
+	animation: slideDown 3s;
+	animation-fill-mode: both;
+	animation-delay: 0.2s;
+	transition: 0.3s;
+}
+
+.contact label {
+	color: aqua;
+
+	margin-bottom: 10px;
+	animation: slideDown 3s;
+	animation-fill-mode: both;
+	animation-delay: 0.2s;
+	transition: 0.3s;
+}
+.contact input,
+.contact textarea {
+	background-color: rgb(55, 54, 54);
+	padding: 10px;
+	width: 65vw;
+
+	font-family: inherit;
+	border: 1px solid aqua;
+}
+.contact textarea {
+	resize: vertical;
+	min-height: 6rem;
+	animation: slideDown 3s;
+	animation-fill-mode: both;
+	animation-delay: 0.2s;
+	transition: 0.3s;
+}
+button {
+	cursor: pointer;
+	margin-top: 1rem;
+	border: none;
+	font-size: 0.8rem;
+	padding: 7px 10px;
+	border-radius: 5px;
+	color: aqua;
+	background-color: rgb(90, 3, 3);
+	animation: appear 3s;
+	animation-fill-mode: both;
+	animation-delay: 3s;
+	transition: 0.3s;
+}
+
+.contact textarea:hover {
+	background-color: white;
+}
+.contact input:hover {
+	background-color: white;
+}
+
+.navbar ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.navbar li a {
+	padding: 0.3rem;
+	font-size: 0.6rem;
+	color: aqua;
+	text-decoration: none;
+	display: block;
+}
+.navbar ul li:nth-child(5) {
+	background-color: rgb(90, 3, 3);
+}
+
+@media (min-width: 768px) {
+	.container_pl {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+	}
+	.contact {
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 400px;
+		height: 550px;
+		
+		
+		
+	}
+	.contact-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 5px;
+		
+	}
+	.contact input,
+	.contact textarea {
+		background-color: rgb(55, 54, 54);
+		padding: 10px;
+		width: 15rem;
+		font-family: inherit;
+		border: 1px solid aqua;
+	}
+	.contact label {
+		color: aqua;
+		font-size: 1.2rem;
+		margin-bottom: 10px;
+		animation: slideDown 3s;
+		animation-fill-mode: both;
+		animation-delay: 0.2s;
+		transition: 0.3s;
+	}
+	button {
+		cursor: pointer;
+		margin-top: 1rem;
+		border: none;
+		font-size: 0.8rem;
+		padding: 7px 10px;
+		border-radius: 5px;
+		color: aqua;
+		background-color: rgb(90, 3, 3);
+		animation: appear 3s;
+		animation-fill-mode: both;
+		animation-delay: 3s;
+		transition: 0.3s;
+	}
+
+	.contact label {
+		font-size: 1.2rem;
+	}
+	.navbar ul {
+		flex-direction: column;
+	}
+	.navbar_one ul li {
+		color: aqua;
+		list-style-type: none;
+		padding: 0.8rem;
+		cursor: pointer;
+	}
+	.navbar {
+		margin-left: 8rem;
+	}
+
+	.navbar ul {
+		flex-direction: column;
+	}
+	.navbar ul li {
+		margin-bottom: 10px;
+	}
+	.navbar ul li a {
+		color: aqua;
+		text-decoration: none;
+		padding: 10px 20px;
+		text-align: center;
+	}
+}
+
+@media (min-width: 1200px) {
+	
+	.contact-box {
+		padding: 10px;
+	}
+	button {
+		padding: 15px;
+		width: 7rem;
+		font-size: 1rem;
+	}
+	.contact label {
+		font-size: 1.2rem;
+	}
+
+	.navbar ul li a {
+		font-size: 0.8rem;
+		padding: 1rem;
+	}
+}
+@media (min-width: 1400px) {
+	body {
+		background-image: url('./img/bgbig2.png');
+		background-size: 100%;
+	}
+	
+	.contact-box {
+		padding: 10px;
+	}
+
+	
+	.navbar ul li a {
+		font-size: 1rem;
+		padding: 1rem;
+	}
+}
+
+/* ANIMACJAANIMACJAANIMACJAANIMACJA */
 
 @keyframes slideDown {
 	0% {
@@ -231,3 +701,11 @@ button {
 		opacity: 1;
 	}
 }
+/* JSJSJSJSJSJSJSJSJSJSJSJSJSJJS */
+.container_de {
+	display: none;
+}
+.container_pl {
+	display: none;
+}
+

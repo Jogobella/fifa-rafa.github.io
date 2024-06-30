@@ -9,17 +9,41 @@ body {
 	background-repeat: no-repeat;
 	background-size: auto;
 }
-.navbar ul {
+.flagi {
+	background-color: rgb(20, 113, 113);
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	left: 50%;
+	transform: translate(-50%);
+	top: 1rem;
+	animation: appear 3s;
+	animation-fill-mode: both;
+	animation-delay: 3s;
+	transition: 0.3s;
+	cursor: pointer;
+}
+	
+	
+	
+.flagi img {
+	
+	padding: 8px 8px;
+	height: 35px;
+	width: 35px;
+}
+
+.container_en ul {
 	list-style-type: none;
 	text-align: center;
 	margin-top: 6.8rem;
 	}
 	
-.navbar ul li a {
+.container_en ul li a {
 	display: inline-block;
 }
 
-.navbar a {
+.container_en a {
 	color: aqua;
 	text-decoration: none;
 	display: block;
@@ -28,42 +52,42 @@ body {
 	font-size: 1.5rem;
 }
 
-.navbar ul li:first-child a {
+.container_en ul li:first-child a {
 	animation: slideDown 2s;
 	animation-fill-mode: both;
 	animation-delay: 1.5s;
 	transition: 0.3s;
 }
 
-.navbar ul li:nth-child(2) a {
+.container_en ul li:nth-child(2) a {
 	animation: slideDown 2s;
 	animation-fill-mode: both;
 	animation-delay: 1.2s;
 	transition: 0.3s;
 }
 
-.navbar ul li:nth-child(3) a {
+.container_en ul li:nth-child(3) a {
 	animation: slideDown 2s;
 	animation-fill-mode: both;
 	animation-delay: 0.9s;
 	transition: 0.3s;
 }
 
-.navbar ul li:nth-child(4) a {
+.container_en ul li:nth-child(4) a {
 	animation: slideDown 2s;
 	animation-fill-mode: both;
 	animation-delay: 0.6s;
 	transition: 0.3s;
 }
 
-.navbar ul li:nth-child(5) a {
+.container_en ul li:nth-child(5) a {
 	animation: slideDown 2s;
 	animation-fill-mode: both;
 	animation-delay: 0.3s;
 	transition: 0.3s;
 }
 
-.navbar ul li a:hover {
+.container_en ul li a:hover {
 	background-color: rgb(90, 3, 3);
 	border-radius: 8px;
 	
@@ -72,7 +96,29 @@ body {
 
 
 @media (min-width: 768px) {
-	.navbar ul {
+	.flagi {
+		background-color: rgb(20, 113, 113);
+		position: absolute;
+		display: flex;
+		flex-direction: row;
+		left: 50%;
+		transform: translate(-50%);
+		top: 1rem;
+		animation: appear 3s;
+		animation-fill-mode: both;
+		animation-delay: 3s;
+		transition: 0.3s;
+	}
+		
+		
+		
+	.flagi img {
+		
+		padding: 8px 8px;
+		height: 40px;
+		width: 40px;
+	}
+	.container_en ul {
 		list-style-type: none;
 		text-align: center;
 		padding: 0px;
@@ -86,17 +132,316 @@ body {
 	    background-repeat: no-repeat;
 		background-size: auto;
 	}
-	.navbar a {
+	.container_en a {
 		font-size: 2rem;
 	}
 }
 @media (min-width: 1400px) {
+	.container_en a {
+		font-size: 3rem;
+	}
+	.flagi {
+		
+		position: absolute;
+		display: flex;
+		flex-direction: row;
+		left: 50%;
+		transform: translate(-50%);
+		top: 1rem;
+		animation: appear 3s;
+		animation-fill-mode: both;
+		animation-delay: 3s;
+		transition: 0.3s;
+	}
+		
+		
+		
+	.flagi img {
+		
+		padding: 8px 8px;
+		height: 45px;
+		width: 45px;
+	}
 	body {
 		background-image: url(./img/bgbig2.png);
 	    background-repeat: no-repeat;
 		background-size: 100%;
 	}
-	.navbar a {
+
+}
+
+/* DEDEDEDEDEDDEDEDEDEDEDEDEDEDD */
+	
+
+.container_de ul {
+	list-style-type: none;
+	text-align: center;
+	margin-top: 6.8rem;
+	}
+	
+.container_de ul li a {
+	display: inline-block;
+}
+
+.container_de a {
+	color: aqua;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding: 1.25rem;
+	font-size: 1.5rem;
+}
+
+.container_de ul li:first-child a {
+	animation: slideDown 2s;
+	animation-fill-mode: both;
+	animation-delay: 1.5s;
+	transition: 0.3s;
+}
+
+.container_de ul li:nth-child(2) a {
+	animation: slideDown 2s;
+	animation-fill-mode: both;
+	animation-delay: 1.2s;
+	transition: 0.3s;
+}
+
+.container_de ul li:nth-child(3) a {
+	animation: slideDown 2s;
+	animation-fill-mode: both;
+	animation-delay: 0.9s;
+	transition: 0.3s;
+}
+
+.container_de ul li:nth-child(4) a {
+	animation: slideDown 2s;
+	animation-fill-mode: both;
+	animation-delay: 0.6s;
+	transition: 0.3s;
+}
+
+.container_de ul li:nth-child(5) a {
+	animation: slideDown 2s;
+	animation-fill-mode: both;
+	animation-delay: 0.3s;
+	transition: 0.3s;
+}
+
+.container_de ul li a:hover {
+	background-color: rgb(90, 3, 3);
+	border-radius: 8px;
+	
+}
+
+
+
+@media (min-width: 768px) {
+	.flagi {
+		background-color: rgb(20, 113, 113);
+		position: absolute;
+		display: flex;
+		flex-direction: row;
+		left: 50%;
+		transform: translate(-50%);
+		top: 1rem;
+		animation: appear 3s;
+		animation-fill-mode: both;
+		animation-delay: 3s;
+		transition: 0.3s;
+	}
+		
+		
+		
+	.flagi img {
+		
+		padding: 8px 8px;
+		height: 40px;
+		width: 40px;
+	}
+	.container_de ul {
+		list-style-type: none;
+		text-align: center;
+		padding: 0px;
+		margin-top: 15.5rem;
+	}
+	
+}
+@media (min-width: 1200px) {
+	body {
+		background-image: url(./img/bgbig2.png);
+	    background-repeat: no-repeat;
+		background-size: auto;
+	}
+	.container_de a {
+		font-size: 2rem;
+	}
+}
+@media (min-width: 1400px) {
+	.flagi {
+		
+		position: absolute;
+		display: flex;
+		flex-direction: row;
+		left: 50%;
+		transform: translate(-50%);
+		top: 1rem;
+		animation: appear 3s;
+		animation-fill-mode: both;
+		animation-delay: 3s;
+		transition: 0.3s;
+	}
+		
+		
+		
+	.flagi img {
+		
+		padding: 8px 8px;
+		height: 45px;
+		width: 45px;
+	}
+	body {
+		background-image: url(./img/bgbig2.png);
+	    background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	.container_de a {
+		font-size: 3rem;
+	}
+}
+	
+/* PLPLPLPLPLPLPLPLPLPLPLPLPL */
+.container_pl ul {
+	list-style-type: none;
+	text-align: center;
+	margin-top: 6.8rem;
+	}
+	
+.container_pl ul li a {
+	display: inline-block;
+}
+
+.container_pl a {
+	color: aqua;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding: 1.25rem;
+	font-size: 1.5rem;
+}
+
+.container_pl ul li:first-child a {
+	animation: slideDown 2s;
+	animation-fill-mode: both;
+	animation-delay: 1.5s;
+	transition: 0.3s;
+}
+
+.container_pl ul li:nth-child(2) a {
+	animation: slideDown 2s;
+	animation-fill-mode: both;
+	animation-delay: 1.2s;
+	transition: 0.3s;
+}
+
+.container_pl ul li:nth-child(3) a {
+	animation: slideDown 2s;
+	animation-fill-mode: both;
+	animation-delay: 0.9s;
+	transition: 0.3s;
+}
+
+.container_pl ul li:nth-child(4) a {
+	animation: slideDown 2s;
+	animation-fill-mode: both;
+	animation-delay: 0.6s;
+	transition: 0.3s;
+}
+
+.container_pl ul li:nth-child(5) a {
+	animation: slideDown 2s;
+	animation-fill-mode: both;
+	animation-delay: 0.3s;
+	transition: 0.3s;
+}
+
+.container_pl ul li a:hover {
+	background-color: rgb(90, 3, 3);
+	border-radius: 8px;
+	
+}
+
+
+
+@media (min-width: 768px) {
+	.flagi {
+		background-color: rgb(20, 113, 113);
+		position: absolute;
+		display: flex;
+		flex-direction: row;
+		left: 50%;
+		transform: translate(-50%);
+		top: 1rem;
+		animation: appear 3s;
+		animation-fill-mode: both;
+		animation-delay: 3s;
+		transition: 0.3s;
+	}
+		
+		
+		
+	.flagi img {
+		
+		padding: 8px 8px;
+		height: 40px;
+		width: 40px;
+	}
+	.container_pl ul {
+		list-style-type: none;
+		text-align: center;
+		padding: 0px;
+		margin-top: 15.5rem;
+	}
+	
+}
+@media (min-width: 1200px) {
+	body {
+		background-image: url(./img/bgbig2.png);
+	    background-repeat: no-repeat;
+		background-size: auto;
+	}
+	.container_pl a {
+		font-size: 2rem;
+	}
+}
+@media (min-width: 1400px) {
+	.flagi {
+		
+		position: absolute;
+		display: flex;
+		flex-direction: row;
+		left: 50%;
+		transform: translate(-50%);
+		top: 1rem;
+		animation: appear 3s;
+		animation-fill-mode: both;
+		animation-delay: 3s;
+		transition: 0.3s;
+	}
+		
+		
+		
+	.flagi img {
+		
+		padding: 8px 8px;
+		height: 45px;
+		width: 45px;
+	}
+	body {
+		background-image: url(./img/bgbig2.png);
+	    background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	.container_pl a {
 		font-size: 3rem;
 	}
 }
@@ -110,4 +455,21 @@ body {
 		opacity: 1;
 		transform: translateY(0);
 	}
+}
+/* ANIMACJEANIMACJEANIMACJEANIMACJE */
+@keyframes appear {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* JSJSJSJSJSJSJSJSJSJSJSJSJSJSJ */
+.container_pl {
+	display: none;
+}
+.container_de {
+	display: none;
 }
