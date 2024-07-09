@@ -30,24 +30,8 @@ body {
 	height: 80px;
 }
 
-.flagi {
-	/* background-color: rgba(30, 39, 40, 0.65); */
-	position: absolute;
-	display: flex;
-	flex-direction: row;
-	
-	left: 50%;
-	transform: translate(-50%);
-	
-	top: 0;
-	
-}
-.flagi img {
-	
-	padding: 8px 8px;
-	height: 35px;
-	width: 35px;
-}
+
+
 
 .logo h2 {
 	color: aqua;
@@ -91,12 +75,7 @@ button {
 		width: 27.4rem;
 		background-color: rgba(30, 39, 40, 0.65);
 	}
-	.flagi img {
-		
-		height: 45px;
-		width: 45px;
-	}
-
+	
 	.logo h2 {
 		font-size: 50px;
 		color: aqua;
