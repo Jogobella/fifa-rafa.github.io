@@ -21,26 +21,27 @@ body {
 .section {
 	background-color: rgb(41, 40, 40, 0.65);
 	margin-bottom: 3.5rem;
-
 	height: 25rem;
 	width: 16rem;
-	animation: rotation 2s;
+	overflow: auto;
+	animation: appear 2s;
 	animation-fill-mode:backwards;
 }
+
 h1 {
 	text-align: center;
-	color: aqua;
+	color:aqua;
 	font-size: 1rem;
-	padding-top: 1.5rem;
+	padding-top: 1rem;
 	animation: appear 5s;
 	animation-delay: 1.5s;
 	animation-fill-mode: both;
 }
 h2 {
 	font-weight: 100;
-	font-size: 0.6rem;
+	font-size: 0.8rem;
 	color: aqua;
-	padding-top: 30px;
+	padding-top: 1rem;
 	padding-bottom: auto;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -185,357 +186,7 @@ img {
 		padding-top: 3rem;
 	}
 }
-/* DEDEDEDEDEEDEDEDEDEDEDED */
-.container_de {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	flex-direction: column;
-}
-.section {
-	background-color: rgb(41, 40, 40, 0.65);
-	margin-bottom: 3.5rem;
 
-	height: 25rem;
-	width: 16rem;
-	animation: rotation 2s;
-	animation-fill-mode:backwards;
-}
-h1 {
-	text-align: center;
-	color: aqua;
-	font-size: 1rem;
-	padding-top: 1.5rem;
-	animation: appear 5s;
-	animation-delay: 1.5s;
-	animation-fill-mode: both;
-}
-h2 {
-	font-weight: 100;
-	font-size: 0.6rem;
-	color: aqua;
-	padding-top: 30px;
-	padding-bottom: auto;
-	padding-left: 20px;
-	padding-right: 20px;
-	animation: appear 5s;
-	animation-delay: 2s;
-	animation-fill-mode: both;
-	font-family: 'Nunito Sans', sans-serif;
-}
-h3 {
-	color: aqua;
-	font-size: 1rem;
-	padding-top: 1.6rem;
-	padding-bottom: 1rem;
-	padding-left: 1.2rem;
-	padding-right: 1.2rem;
-	animation: appear 5s;
-	animation-delay: 2.5s;
-	animation-fill-mode: both;
-}
-
-
-
-.navbar ul {
-	
-	list-style-type: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.navbar li a {
-	padding: 0.3rem;
-	font-size: 0.6rem;
-	color: aqua;
-	text-decoration: none;
-	display: block;
-}
-
-.navbar ul li:nth-child(1) {
-	background-color: rgb(90, 3, 3);
-}
-img {
-	position: absolute;
-	left: 10px;
-	top: 10px;
-	bottom: -580px;
-	height: 1.1rem;
-
-	background-color: none;
-	animation: appear 3s;
-	animation-delay: 4s;
-	animation-fill-mode: both;
-}
-
-@media (min-width: 768px) {
-	.container_de {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: row;
-	}
-	.section {
-		width: 400px;
-		height: 550px;
-	}
-
-	.navbar {
-		margin-left: 8rem;
-	}
-	.navbar ul {
-		flex-direction: column;
-	}
-	.navbar ul li {
-		margin-bottom: 10px;
-	}
-	.navbar ul li a {
-		color: aqua;
-		text-decoration: none;
-		padding: 10px 20px;
-		text-align: center;
-	}
-	h1 {
-		font-size: 1.5rem;
-	}
-	h2 {
-		font-size: 1rem;
-		padding-top: 3rem;
-	}
-	h3 {
-		font-size: 1.5rem;
-		padding-top: 3rem;
-	}
-	img {
-		height: 1.7rem;
-	}
-}
-@media (min-width: 1200px) {
-	.section {
-		justify-content: space-evenly;
-		width: 400px;
-		height: 550px;
-	}
-
-	.navbar ul li a {
-		font-size: 0.8rem;
-		padding: 1rem;
-	}
-	h1 {
-		font-size: 1.5rem;
-	}
-	h2 {
-		font-size: 1rem;
-		padding-top: 3rem;
-	}
-	h3 {
-		font-size: 1.5rem;
-		padding-top: 3rem;
-	}
-	img {
-		height: 2.3rem;
-	}
-}
-
-@media (min-width: 1400px) {
-	body {
-		background-image: url('./img/bgbig2.png');
-		background-size: 100%;
-	}
-
-	.navbar ul li a {
-		font-size: 1rem;
-		padding: 1rem;
-	}
-	h1 {
-		font-size: 1.5rem;
-	}
-	h2 {
-		font-size: 1rem;
-		padding-top: 3rem;
-	}
-	h3 {
-		font-size: 1.5rem;
-		padding-top: 3rem;
-	}
-}
-/* PLPLPLPLPLPLPLPLPLPLPLPLPL */
-.container_pl {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	flex-direction: column;
-}
-.section {
-	background-color: rgb(41, 40, 40, 0.65);
-	margin-bottom: 3.5rem;
-
-	height: 25rem;
-	width: 16rem;
-	animation: rotation 2s;
-	animation-fill-mode:backwards;
-}
-h1 {
-	text-align: center;
-	color: aqua;
-	font-size: 1rem;
-	padding-top: 1.5rem;
-	animation: appear 5s;
-	animation-delay: 1.5s;
-	animation-fill-mode: both;
-}
-h2 {
-	font-weight: 100;
-	font-size: 0.6rem;
-	color: aqua;
-	padding-top: 30px;
-	padding-bottom: auto;
-	padding-left: 20px;
-	padding-right: 20px;
-	animation: appear 5s;
-	animation-delay: 2s;
-	animation-fill-mode: both;
-	font-family: 'Nunito Sans', sans-serif;
-}
-h3 {
-	color: aqua;
-	font-size: 1rem;
-	padding-top: 1.6rem;
-	padding-bottom: 1rem;
-	padding-left: 1.2rem;
-	padding-right: 1.2rem;
-	animation: appear 5s;
-	animation-delay: 2.5s;
-	animation-fill-mode: both;
-}
-
-
-
-.navbar ul {
-	
-	list-style-type: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.navbar li a {
-	padding: 0.3rem;
-	font-size: 0.6rem;
-	color: aqua;
-	text-decoration: none;
-	display: block;
-}
-
-.navbar ul li:nth-child(1) {
-	background-color: rgb(90, 3, 3);
-}
-img {
-	position: absolute;
-	left: 10px;
-	top: 10px;
-	bottom: -580px;
-	height: 1.1rem;
-
-	background-color: none;
-	animation: appear 3s;
-	animation-delay: 4s;
-	animation-fill-mode: both;
-}
-
-@media (min-width: 768px) {
-	.container_pl {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: row;
-	}
-	.section {
-		width: 400px;
-		height: 550px;
-	}
-
-	.navbar {
-		margin-left: 8rem;
-	}
-	.navbar ul {
-		flex-direction: column;
-	}
-	.navbar ul li {
-		margin-bottom: 10px;
-	}
-	.navbar ul li a {
-		color: aqua;
-		text-decoration: none;
-		padding: 10px 20px;
-		text-align: center;
-	}
-	h1 {
-		font-size: 1.5rem;
-	}
-	h2 {
-		font-size: 1rem;
-		padding-top: 3rem;
-	}
-	h3 {
-		font-size: 1.5rem;
-		padding-top: 3rem;
-	}
-	img {
-		height: 1.7rem;
-	}
-}
-@media (min-width: 1200px) {
-	.section {
-		justify-content: space-evenly;
-		width: 400px;
-		height: 550px;
-	}
-
-	.navbar ul li a {
-		font-size: 0.8rem;
-		padding: 1rem;
-	}
-	h1 {
-		font-size: 1.5rem;
-	}
-	h2 {
-		font-size: 1rem;
-		padding-top: 3rem;
-	}
-	h3 {
-		font-size: 1.5rem;
-		padding-top: 3rem;
-	}
-	img {
-		height: 2.3rem;
-	}
-}
-
-@media (min-width: 1400px) {
-	body {
-		background-image: url('./img/bgbig2.png');
-		background-size: 100%;
-	}
-
-	.navbar ul li a {
-		font-size: 1rem;
-		padding: 1rem;
-	}
-	h1 {
-		font-size: 1.5rem;
-	}
-	h2 {
-		font-size: 1rem;
-		padding-top: 3rem;
-	}
-	h3 {
-		font-size: 1.5rem;
-		padding-top: 3rem;
-	}
-}
-/* ANIMATIONANIMATIONANIMATION */
 
 @keyframes appear {
 	0% {
@@ -554,10 +205,4 @@ img {
 	}
 }
 
-/* JSJSJSJSJSJSJSJJSJSJ */
-.container_pl {
-	display: none;
-}
-.container_de {
-	display: none;
-}
+
